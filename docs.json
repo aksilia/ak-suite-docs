@@ -6,9 +6,11 @@
       ["Ainstein", [
         ["Suggerimenti", "/ainstein/suggestions"]
       ]],
-      ["Suite", [
-        ["Autenticazione", "/suite/auth"],
-        ["Recupera password", "/suite/reset-password"]
+      ["Generale", [
+        ["Autenticazione", [
+          ["Accedi", "/suite/auth"],
+          ["Recupera passowrd", "/suite/reset-password"]
+        ]]
       ]]
     ]
   }
