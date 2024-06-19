@@ -3,7 +3,9 @@
     "theme": "#36B9B9",
     "sidebar": [
       ["Home", "/"],
-      ["Suggerimenti", "/ainstein/suggestions"],
+      ["Ainstein", [
+        ["Suggerimenti", "/ainstein/suggestions"]
+      ]],
       ["Suite", [
         ["Autenticazione", "/suite/auth"]
       ]]
