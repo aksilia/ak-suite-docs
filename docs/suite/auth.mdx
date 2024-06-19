@@ -2,63 +2,38 @@
 
 Il modulo di Autenticazione è uno dei componente essenziali di Suite, progettato per fornire un'interfaccia sicura e intuitiva per l'autenticazione degli utenti. Questo modulo consente la verifica dell'identità degli utenti attraverso metodi come **email e password**, o tramite OAuth2 per mezzo dei provider **Google** e **Microsoft**, assicurando un accesso sicuro e protetto alle risorse del sistema.
 
-<Warning>Suite permette solo il login all'utente. Per la registrazione la preghiamo di rivolgersi ad un nostro consulente</Warning>
+<Warning>Suite permette solo il login all'utente. Per la registrazione è necessario rivolgersi al proprio consulente o al supporto tecnico.</Warning>
 
 ## Login
 
-Per accedere al tuo account, seleziona Google o Microsoft oppure inserisci la tua email e password nei campi dedicati. Clicca su "Continua" per completare il login. 
-<br/>Accedi tramite questo link: [Suite login](https://app.aksiliasuite.com/auth/signin)
+Per accedere al proprio account, l'utente deve selezionare la rispettiva modalità di accesso, scegliendo tra Google o Microsoft o inserendo la propria email e password. Cliccando su "Continua" l'accesso al sistema viene verificato.
+ 
+<br/>Link di autenticazione: [Suite login](https://app.aksiliasuite.com/auth/signin)
 
 <Image src="/assets/ak_login.png" alt="ak login" height="500" />
 
-E' possibile effettuare il login in tre modi diversi:
+E' possibile effettuare il login in tre differenti modalità:
 
-- **Email**: inserendo l'email e la password
-- **Google**: cliccando sul pulsante Google
-- **Microsoft**: cliccando sul pulsante Microsoft
+- **Email**: inserendo l'email e password
+- **Google**: accedendo con le credenziali di un account Google aziendale
+- **Microsoft**: accedendo con le credenziali di un account Microsoft aziendale
 
 <Image src="/assets/ak_login_google.png" alt="ak login" height="500" />
 
-## Recupero credenziali
+## Recupero password
 
-Premendo sul collegamento <LostPasswordDiv text={"Clicca qui per reimpostare"} /> è possibile recuperare la propria password.
-
-export const LostPasswordDiv = props => {
-    return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: '10px'
-        }}>
-            <a href="https://app.aksiliasuite.com/auth/reset" style={{
-                color: '#007bff',
-                textDecoration: 'none'
-            }}>{props.text}</a>
-        </div>
-    )
-}
-
-### Recupera password
-
-Se hai dimenticato la tua password, puoi recuperarla inserendo il tuo indirizzo email. Riceverai un'email con un link per reimpostare la tua password.
+Se l'utente ha dicmenticato la password, può recuperarla inserendo il proprio indirizzo email. Alla richiesta di reset, l'utente riceverà una email con un link per reimpostare la password.
 
 <Image src="/assets/ak_reset_password.png" alt="ak login" height="500" />
 
-A questo punto basta inserire l'email ed arriverà una mail con il link per reimpostare la password.
+La pagina di reset richiede di inserire e confermare la nuova password. Abilitando l'emoji 🫣 si può visualizzare la password inserita al fine di verificare i requisiti minimi.
 
-<Image src="/assets/ak_mail_reset_password.png" alt="ak reset password" height="500" />
+I requisiti di sicurezza per le password sono i seguenti:
 
-Premere su Reset Password e inserire la nuova password.
-
-<Image src="/assets/ak_reset.png" alt="ak reset password" height="500" />
-
-Puoi premere sull'emoji 🫣 per visualizzare la password che stai inserendo.
-
-I requisiti minimi per la password sono:
 - 16 caratteri
 - 1 lettera maiuscola
 - 1 lettera minuscola
 - 1 numero
 - 1 carattere speciale
+
+<Image src="/assets/ak_reset.png" alt="ak reset password" height="500" />
