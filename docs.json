@@ -3,6 +3,7 @@
     "theme": "#36B9B9",
     "sidebar": [
       ["Home", "/"],
-      ["Suggerimenti", "/ainstein/suggestions"]
+      ["Suggerimenti", "/ainstein/suggestions"],
+      ["Suite/core", "/ainstein/suggestions"]
     ]
   }
