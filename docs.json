@@ -8,7 +8,7 @@
       ]],
       ["Suite", [
         ["Autenticazione", "/suite/auth"],
-        ["Recupera password", "/suite/recover-password"]
+        ["Recupera password", "/suite/reset-password"]
       ]]
     ]
   }
