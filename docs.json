@@ -4,6 +4,8 @@
     "sidebar": [
       ["Home", "/"],
       ["Suggerimenti", "/ainstein/suggestions"],
-      ["Suite/core", "/ainstein/suggestions"]
+      ["Suite", [
+        ["Autenticazione", "/suite/auth"]
+      ]]
     ]
   }

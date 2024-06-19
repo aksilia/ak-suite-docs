@@ -1,0 +1,36 @@
+# Autenticazione
+
+Il modulo di autenticazione è un modulo di base che fornisce un'interfaccia per l'autenticazione degli utenti. Questo modulo è utilizzato per gestire l'autenticazione degli utenti e per fornire un'interfaccia per la registrazione, il login e il logout degli utenti.
+
+<Warning>Aksilia Suite permette solo il login all'utente. Per la registrazione la preghiamo di rivolgersi ad un nostro consulente</Warning>
+
+## Login
+
+<Image src="../assets/ak_login.png" alt="ak login" height="100" />
+
+E' possibile effettuare il login in tre modi diversi:
+
+- **Email**: inserendo l'email e la password
+- **Google**: cliccando sul pulsante Google
+- **Microsoft**: cliccando sul pulsante Microsoft
+
+## Recupero credenziali
+
+Premendo sul collegamento <LostPasswordDiv text={"Clicca qui per reimpostare"} /> è possibile recuperare la propria password.
+
+export const LostPasswordDiv = props => {
+    return (
+        <div style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '10px'
+        }}>
+            <a href="#" style={{
+                color: '#007bff',
+                textDecoration: 'none'
+            }}>{props.text}</a>
+        </div>
+    )
+}

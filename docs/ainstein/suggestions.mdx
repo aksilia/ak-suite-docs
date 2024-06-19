@@ -10,3 +10,29 @@ Ogni domanda abilitata ad i suggerimenti Ainstein avrà un bottone suggerisci a 
 (come per esempio il nome dell'azienda, alcuni dati personali, ecc) e che restituirà un suggerimento.
 
 Questi parametri verranno salvati nel nostro database in modo sicuro così che l'utente non debba reinserirli ogni volta anche in moduli diversi.
+
+<InputBox placeHolder="Inserisci il tuo nome" buttonValue="Suggerimento"></InputBox>
+
+export const InputBox = props => {
+    return (
+        <div style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '10px'
+        }}>
+            <input type="text" placeholder={props.placeHolder} style={{
+                padding: '10px',
+                borderRadius: '5px',
+                border: '1px solid #ccc'
+            }}/>
+            <button style={{
+                padding: '10px',
+                borderRadius: '5px',
+                border: '1px solid #ccc',
+                backgroundColor: '#f0f0f0'
+            }}>{props.buttonValue}</button>
+        </div>
+    )
+}
