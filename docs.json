@@ -7,10 +7,7 @@
         ["Suggerimenti", "/ainstein/suggestions"]
       ]],
       ["Generale", [
-        ["Autenticazione", [
-          ["Accedi", "/suite/auth"],
-          ["Recupera passowrd", "/suite/reset-password"]
-        ]]
+        ["Autenticazione", "/suite/auth"]
       ]]
     ]
   }
